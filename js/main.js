@@ -17,7 +17,7 @@ function preloadImage(url)
     img.src = url;
 }
 
-preloadImage("images/winer.gif");
+preloadImage("images/winner.gif");
 preloadImage("images/loser.gif");
 
 function addEventsToOverlyButtons(){

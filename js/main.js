@@ -10,8 +10,15 @@ let $overlay = document.querySelector(".overlay");
 let didUserWin = false;
 let $XcloseOverlyWindow = document.querySelector(".XcloseOverlyWindow");
 let $playAgainButton = document.querySelector(".playAgainButton");
-    
 
+function preloadImage(url)
+{
+    let img  =new Image();
+    img.src = url;
+}
+
+preloadImage("../images/winer.gif");
+preloadImage("../images/loser.gif");
 
 function addEventsToOverlyButtons(){
     $XcloseOverlyWindow.addEventListener("click", closeOverlyWindow);
@@ -190,5 +197,7 @@ function PlayAgain (){
     setTimeout(colorTheCards, 1000) ;
     setTimeout(readySetGo, 1500) ;
 }
+
+
 
 document.addEventListener("DOMContentLoaded", init);

@@ -17,8 +17,8 @@ function preloadImage(url)
     img.src = url;
 }
 
-preloadImage("../images/winer.gif");
-preloadImage("../images/loser.gif");
+preloadImage("images/winer.gif");
+preloadImage("images/loser.gif");
 
 function addEventsToOverlyButtons(){
     $XcloseOverlyWindow.addEventListener("click", closeOverlyWindow);

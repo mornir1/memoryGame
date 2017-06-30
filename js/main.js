@@ -20,11 +20,9 @@ function addEventsToOverlyButtons(){
 
 function endOfGameOverly(){
     insertOverlyParameters();
-    setTimeout (function (){
-        $overlay.style.visibility = "visible";
-        $overlay.style.opacity = "1";
-        $overlay.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
-     } ,800)
+    $overlay.style.visibility = "visible";
+    $overlay.style.opacity = "1";
+    $overlay.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
 }
 
 function closeOverlyWindow(){

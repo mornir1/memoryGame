@@ -1,0 +1,157 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Handlee', cursive;
+}
+
+p {
+    padding:0;
+    margin:0;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color:#00a3d4;
+    margin-bottom: 5px;
+}
+
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+    visibility: hidden;
+	opacity:0;
+	background-color: rgba(0, 0, 0, 0.9);
+	transition: all 1s ease;
+    z-index: 1;
+}
+
+.overlyWindow{
+    width: 300px;
+    height:250px;
+    background: #fff;
+    border-radius: 4px;
+    margin:50px auto;
+    font-size: 20px;
+}
+
+.XcloseOverlyWindow{
+    float:right;
+    color:red;
+    margin-right: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.OverlyWindowElementsContainer{
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.imageForEnd{
+    width:200px;
+}
+
+.textForEnd{
+    text-align: center;
+}
+
+.playAgainButton{
+    width:200px;
+    margin: 0 auto;
+    font-family: 'Handlee', cursive;
+    background-color: DeepSkyBlue;
+    color:#fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.backImage{
+     width: 100%;
+    height: 100%;
+}
+
+
+.readyText {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin:5px auto;
+    
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 500px; /* Need a specific value to work */
+}
+
+.text1 {
+    font-size: 20px;
+    text-align: center;
+    color:#00a3d4;
+    margin:5px;
+}
+
+
+
+.colorsBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 450px;
+    margin-top: 20px;
+}
+ 
+.cardsBox {
+    width: 900px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    position: relative;
+    perspective: 800px;
+    
+}
+
+.card {
+    width:130px;
+    height:180px;
+    float:left;
+    margin: 5px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.card figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card.flipped {
+  transform: rotateY( 180deg );
+}
+
+.card .back {
+  transform: rotateY( 180deg );
+}
+
+.color {
+    width:50px;
+    height:50px;
+    display: inline-block;
+    background-color: red;
+    margin: 10px;
+    cursor: pointer;
+}

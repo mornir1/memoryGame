@@ -66,6 +66,17 @@ h1 {
     color:#fff;
     border-radius: 5px;
     cursor: pointer;
+    display: block;
+    border:none;
+}
+
+.playAgainButton:hover{
+    background-color: DarkCyan;
+}
+
+.playAgainContainer{
+    width: 100vw;
+    /*width: 100%;*/
 }
 
 .backImage{
@@ -104,7 +115,7 @@ h1 {
     justify-content: center;
     margin: 0 auto;
     width: 450px;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 }
  
 .cardsBox {
@@ -151,11 +162,8 @@ h1 {
     width:50px;
     height:50px;
     display: inline-block;
-    background-color: red;
-    margin: 10px;
+    margin: 0 10px 10px 5px;
     cursor: pointer;
 }
-/*
-#preload-01 { background: url(../images/winner.gif) no-repeat -9999px -9999px; }
-#preload-02 { background: url(../images/loser.gif) no-repeat -9999px -9999px; }*/
+
 

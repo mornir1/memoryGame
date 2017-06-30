@@ -9,12 +9,14 @@ let $cards;
 let $overlay = document.querySelector(".overlay");
 let didUserWin = false;
 let $XcloseOverlyWindow = document.querySelector(".XcloseOverlyWindow");
-let $playAgainButton = document.querySelector(".playAgainButton");
+let $playAgainButtons = document.querySelectorAll(".playAgainButton");
 
 
 function addEventsToOverlyButtons(){
     $XcloseOverlyWindow.addEventListener("click", closeOverlyWindow);
-    $playAgainButton.addEventListener("click", PlayAgain);
+    for(button of $playAgainButtons){
+      button.addEventListener("click", PlayAgain);
+    }
 }
 
 function endOfGameOverly(){

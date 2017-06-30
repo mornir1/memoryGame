@@ -201,3 +201,14 @@ function PlayAgain (){
 
 
 document.addEventListener("DOMContentLoaded", init);
+
+
+function preloadImage(url)
+{
+    let img  =new Image();
+    img.src = url;
+}
+
+preloadImage("images/winner.gif");
+preloadImage("images/loser.gif");
+
